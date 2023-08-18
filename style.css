@@ -1,0 +1,175 @@
+
+/* Nav Bar */
+
+.nav{
+    background-color: cadetblue;
+}
+
+
+}
+.nav li a{
+    text-decoration: none;
+    border-bottom: 0;
+    
+    
+}
+.nav {
+    background-color: cadetblue;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+}
+.nav ul, li, a:hover{
+    color: coral;
+}
+
+.nav li a {
+    text-decoration: none;  
+}
+
+.nav li:hover {
+    color: coral;
+    border-bottom: 5px solid green;
+}
+
+.bouncing-container {
+    margin: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.bouncing-container {
+    margin: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid greenyellow;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: bounceAnimation 5s linear infinite forwards alternate;
+}
+
+@keyframes bounceAnimation {
+    0% {
+        top: 50vh;
+        left: 50%;
+        background: #fff;
+    }
+    25% {
+        top: 0vh;
+        left: 15%;
+    }
+
+    50% {
+        top: 20vh;
+        left: 6%;
+        background: blue;
+    }
+
+    75% {
+        top: 70vh;
+        left: 93%;
+    }
+
+    85% {
+        top: 0vh;
+        left: 50%;
+    }
+
+    100% {
+        top: 90vh;
+        left: 6%;
+    }
+    
+}
+
+.left-line {
+    width: 0.8rem;
+    height: 80px;
+    background: red;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    left: 5%;
+    animation: leftLineAnimation 5s linear infinite forwards alternate;
+    border: 1px solid greenyellow;
+}
+
+.right-line {
+    width: 0.8rem;
+    height: 80px;
+    border-radius: 10px 10px 10px 10px;
+    background: red;
+    position: absolute;
+    right: 5%;
+    animation: rightLineAnimation 5s linear infinite forwards alternate;
+    border: 1px solid greenyellow;
+}
+
+@keyframes leftLineAnimation {
+    0% {
+        left: 5%;
+        top: 0vh;
+    }
+
+    50% {
+        top: 15vh;
+        left: 5%;
+        background: blue;
+    }
+
+    75% {
+        bottom: 0vh;
+        left: 5%;
+    }
+
+    100% {
+        left: 5%;
+        top: 90vh;
+    }
+}
+
+@keyframes rightLineAnimation {
+    0% {
+        right: 5%;
+        top: 0vh;
+    }
+
+    100% {
+        right: 5%;
+        top: 90vh;
+        background: blue;
+    }
+}
+
+.bouncing-container {
+    position: relative;
+}
+/*body*/
+body{
+    background-image: url(image/beautiful-night-sky-sunset-scenery-digital-art-hd-wallpaper-uhdpaper.com-563@0@i.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
